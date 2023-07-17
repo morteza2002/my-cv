@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--font awsome cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custome css style -->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="post" action="generate.php">
+      <div class="container">
+        <div class="peofile">
+          <label for="">your personal info</label>
+          <br /><br />
+          <input id="imgField" type="file" name="imgprofile" accept=".jpg" />
+          <br />
+          <br />
+          <h3>
+            <label for="nameField">Your name:</label>
+
+            <input type="text" name="name" placeholder="type name" />
+          </h3>
+          <br />
+          <h3>
+            <label for="namelField">Your last:</label>
+
+            <input type="text" name="lname" placeholder="type last name" />
+          </h3>
+          <br />
+          <p style="transform: translate(50px, 0px)">
+            <label for="jobField">Your job:</label>
+            <input type="text" name="job" placeholder="type job" />
+          </p>
+        </div>
+
+        <div class="information">
+          <div class="about">
+            <h3 class="title">about me</h3>
+            <p>
+              <label for="aboutField">Your about:</label>
+              <input
+                type="text"
+                name="info"
+                placeholder="type more info"
+                style="width: 500px"
+              />
+            </p>
+
+            <div class="box_container">
+              <div class="box">
+                <h3>
+                  <span>age :</span
+                  ><input
+                    type="date"
+                    name="bday"
+                    id="bday"
+                    onchange="submitBday()"
+                  />
+                </h3>
+                <h3>
+                  <span>adress :</span
+                  ><input type="text" name="adress" placeholder="type adress" />
+                </h3>
+                <h3>
+                  <span>number :</span><label for="phonefield"></label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="type your number"
+                  />
+                </h3>
+                <h3>
+                  <span>email :</span
+                  ><input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="type your email"
+                  />
+                </h3>
+              </div>
+
+              <div class="box">
+                <h3>
+                  <span>skill :</span>
+                  <input
+                    type="text"
+                    name="skill"
+                    placeholder="type your skill"
+                  />
+                </h3>
+                <h3>
+                  <span>language :</span
+                  ><input
+                    type="text"
+                    name="language"
+                    placeholder="type your language"
+                  />
+                </h3>
+                <h3>
+                  <span>experiencce :</span
+                  ><input
+                    type="text"
+                    name="experiencce"
+                    placeholder="type your experiencce"
+                  />
+                </h3>
+                <h3>
+                  <span>freelance :</span
+                  ><input
+                    type="text"
+                    name="freelance"
+                    placeholder="type your freelance"
+                  />
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn1">Generate CV</button>
+      </div>
+    </form>
+  </body>
+</html>
